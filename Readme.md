@@ -1,13 +1,13 @@
 # DRFx
 
-A framework for launching new Django Rest Framework projects quickly with a complete user authentication flow, custom user model, and social authentication options via Gmail, Facebook, Twitter, etc.
+A framework for launching new Django Rest Framework projects quickly. Comes with a custom user model, login/logout/signup, social authentication via django-allauth, and more.
 
 ## Features
 
 * Django 2.0 and Python 3.6
 * Custom user model
-* Email/password for login/signup
-* User registration
+* Token-based auth
+* Signup/login/logout
 * [django-allauth](https://github.com/pennersr/django-allauth) for easy social auth
 * [Pipenv](https://github.com/pypa/pipenv) for virtualenvs
 
@@ -34,6 +34,11 @@ Confirm everything is working:
 (drfx) $ python manage.py runserver
 ```
 
-Load the site at http://127.0.0.1:8000.
+4.  Endpoints
 
-6.  (Optional) Under "Sites" in the admin http://127.0.0.1:8000/admin/sites/site/ change "example.com" to "127.0.0.1" and the name to whatever your project is called, for example djangox.
+Login with your superuser account. Then navigate to all users. Logout. Sign up for a new account and repeat the login, users, logout flow.
+
+* login - http://127.0.0.1:8000/api/v1/rest-auth/login/
+* all users - http://127.0.0.1:8000/api/v1/users
+* logout - http://127.0.0.1:8000/api/v1/rest-auth/logout/
+* signup - http://127.0.0.1:8000/api/v1/rest-auth/registration/
