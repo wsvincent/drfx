@@ -28,9 +28,7 @@ $ pipenv shell
 ```
 (drfx) $ python manage.py makemigrations users
 (drfx) $ python manage.py migrate
-Create a superuser:
 (drfx) $ python manage.py createsuperuser
-Confirm everything is working:
 (drfx) $ python manage.py runserver
 ```
 
