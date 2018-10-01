@@ -40,3 +40,9 @@ Login with your superuser account. Then navigate to all users. Logout. Sign up f
 - all users - http://127.0.0.1:8000/api/v1/users
 - logout - http://127.0.0.1:8000/api/v1/rest-auth/logout/
 - signup - http://127.0.0.1:8000/api/v1/rest-auth/registration/
+
+---
+
+Want to learn more about Django REST Framework? I've written an entire book that takes a project-based approach to building web APIs with Django. The first 2 chapters are available for free online at [https://restapiswithdjango.com/](https://restapiswithdjango.com/).
+
+[![REST APIs with Django](https://wsvincent.com/assets/images/djangorestapis_cover300.jpeg)](https://restapiswithdjango.com)
