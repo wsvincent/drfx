@@ -1,17 +1,15 @@
 [[source]]
-
-url = "https://pypi.python.org/simple"
-verify_ssl = true
 name = "pypi"
-
-
-[packages]
-
-django = "*"
-djangorestframework = "*"
-django-rest-auth = "*"
-django-allauth = "*"
-
+url = "https://pypi.org/simple"
+verify_ssl = true
 
 [dev-packages]
 
+[packages]
+django = "==2.2.0"
+djangorestframework = "==3.9.2"
+django-rest-auth = "==0.9.5"
+django-allauth = "==0.39.0"
+
+[requires]
+python_version = "3.7"
