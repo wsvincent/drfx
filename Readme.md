@@ -4,7 +4,7 @@ A framework for launching new Django Rest Framework projects quickly. Comes with
 
 ## Features
 
-- Django 2.2 and Python 3.7
+- Django 3.0, Django REST Framework 3.11, and Python 3.7
 - Custom user model
 - Token-based auth
 - Signup/login/logout
@@ -45,4 +45,4 @@ Login with your superuser account. Then navigate to all users. Logout. Sign up f
 
 Want to learn more about Django REST Framework? I've written an entire book that takes a project-based approach to building web APIs with Django. The first 2 chapters are available for free online at [https://djangoforapis.com/](https://djangoforapis.com/).
 
-[![Django for APIs](https://wsvincent.com/assets/images/djangoforapis_cover_300.jpeg)](https://djangoforapis.com)
+[![Django for APIs](https://learndjango.com/static/images/books/dfa_cover_30.jpg)](https://djangoforapis.com)
