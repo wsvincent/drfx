@@ -45,4 +45,4 @@ Login with your superuser account. Then navigate to all users. Logout. Sign up f
 
 Want to learn more about Django REST Framework? I've written an entire book that takes a project-based approach to building web APIs with Django. The first 2 chapters are available for free online at [https://djangoforapis.com/](https://djangoforapis.com/).
 
-[![Django for APIs](https://learndjango.com/static/images/books/dfa_cover_30.jpg)](https://djangoforapis.com)
+[![Django for APIs](https://learndjango.com/static/images/books/dfa_cover_31.jpg)](https://djangoforapis.com)
