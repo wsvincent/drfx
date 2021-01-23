@@ -16,11 +16,22 @@ A framework for launching new Django Rest Framework projects quickly. Comes with
 1.  Make sure Python 3.7x and Pipenv are already installed. [See here for help](https://djangoforbeginners.com/initial-setup/).
 2.  Clone the repo and configure the virtual environment:
 
+Using Pipenv:
+
 ```
 $ git clone https://github.com/wsvincent/drfx.git
 $ cd drfx
 $ pipenv install
 $ pipenv shell
+```
+
+Using venv
+```
+$ git clone https://github.com/wsvincent/drfx.git
+$ cd drfx
+$ python -m venv drfx
+$ source drfx/bin/activate
+$ pip install -r requirements.txt
 ```
 
 3.  Set up the initial migration for our custom user models in users and build the database.
