@@ -9,19 +9,33 @@ A framework for launching new Django Rest Framework projects quickly. Comes with
 - Token-based auth via [dj-rest-auth](https://github.com/iMerica/dj-rest-auth)
 - Signup/login/logout
 - [django-allauth](https://github.com/pennersr/django-allauth) for social auth
-- [Pipenv](https://github.com/pypa/pipenv) for virtualenvs
+- [uv](https://docs.astral.sh/uv/) for dependency management (plain pip works too)
 
 ## First-time setup
 
-1.  Make sure Python 3.12+ and Pipenv are already installed. [See here for help](https://djangoforbeginners.com/initial-setup/).
-2.  Clone the repo and configure the virtual environment:
+1.  Make sure Python 3.12+ is installed. [See here for help](https://djangoforbeginners.com/initial-setup/).
+2.  Clone the repo and install dependencies, using either uv (recommended) or pip.
+
+With [uv](https://docs.astral.sh/uv/getting-started/installation/):
 
 ```
 $ git clone https://github.com/wsvincent/drfx.git
 $ cd drfx
-$ pipenv install
-$ pipenv shell
+$ uv sync
+$ source .venv/bin/activate
 ```
+
+Or with pip:
+
+```
+$ git clone https://github.com/wsvincent/drfx.git
+$ cd drfx
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+(drfx) $ python -m pip install -r requirements.txt
+```
+
+On Windows, activate with `.venv\Scripts\activate` instead.
 
 3.  Set up the initial migration for our custom user models in users and build the database.
 
@@ -40,9 +54,3 @@ Login with your superuser account. Then navigate to all users. Logout. Sign up f
 - all users - http://127.0.0.1:8000/api/v1/users
 - logout - http://127.0.0.1:8000/api/v1/rest-auth/logout/
 - signup - http://127.0.0.1:8000/api/v1/rest-auth/registration/
-
----
-
-Want to learn more about Django REST Framework? I've written an entire book that takes a project-based approach to building web APIs with Django. The first 2 chapters are available for free online at [https://djangoforapis.com/](https://djangoforapis.com/).
-
-[![Django for APIs](https://learndjango.com/static/images/books/dfa_cover_31.jpg)](https://djangoforapis.com)
