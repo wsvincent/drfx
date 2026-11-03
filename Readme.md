@@ -1,19 +1,19 @@
 # DRFx
 
-A framework for launching new Django Rest Framework projects quickly. Comes with a custom user model, login/logout/signup, social authentication via django-allauth, and more.
+A framework for launching new Django Rest Framework projects quickly. Comes with a custom user model, login/logout/signup, social authentication via django-allauth and dj-rest-auth, and more.
 
 ## Features
 
-- Django 3.1, Django REST Framework 3.12, and Python 3.8
+- Django 6.1, Django REST Framework 3.18, and Python 3.12+
 - Custom user model
-- Token-based auth
+- Token-based auth via [dj-rest-auth](https://github.com/iMerica/dj-rest-auth)
 - Signup/login/logout
 - [django-allauth](https://github.com/pennersr/django-allauth) for social auth
 - [Pipenv](https://github.com/pypa/pipenv) for virtualenvs
 
 ## First-time setup
 
-1.  Make sure Python 3.7x and Pipenv are already installed. [See here for help](https://djangoforbeginners.com/initial-setup/).
+1.  Make sure Python 3.12+ and Pipenv are already installed. [See here for help](https://djangoforbeginners.com/initial-setup/).
 2.  Clone the repo and configure the virtual environment:
 
 ```

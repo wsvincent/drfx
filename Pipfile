@@ -6,7 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "~=3.1.0"
-djangorestframework = "~=3.12.0"
-django-rest-auth = "~=0.9"
-django-allauth = "==0.42.0"
+django = "~=6.1.0"
+djangorestframework = "~=3.18.0"
+dj-rest-auth = {version = "~=7.2", extras = ["with-social"]}
+django-allauth = "~=65.21"
+
+[requires]
+python_version = "3.12"
